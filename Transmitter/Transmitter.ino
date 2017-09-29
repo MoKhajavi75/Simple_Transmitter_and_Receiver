@@ -8,7 +8,7 @@
 #include <nRF24L01.h>   //to handle this particular modem driver
 
 
-RF24 radio(7, 9);   //create a radio object and set the pins (7 for CE - 8 for CSN)
+RF24 radio(7, 8);   //create a radio object and set the pins (7 for CE - 8 for CSN)
 const byte rxAddr[6] = "00001";   //declare a global array (used for determine the modem that we want to communicate)
 bool is_sending = false;
 
